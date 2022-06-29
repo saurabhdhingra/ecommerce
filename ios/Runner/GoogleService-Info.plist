@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>884962337718-550ostvnddf4svh34s1m6jb1giv2dle0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.884962337718-550ostvnddf4svh34s1m6jb1giv2dle0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAsSGw7BewgHxYRvkefOJlcW7vTANJFUmw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>884962337718</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.anurag.ecommerce</string>
+	<key>PROJECT_ID</key>
+	<string>navyat</string>
+	<key>STORAGE_BUCKET</key>
+	<string>navyat.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:884962337718:ios:ba208ecd4c40a05fb75717</string>
+</dict>
+</plist>

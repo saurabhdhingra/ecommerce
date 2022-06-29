@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "884962337718",
+    "project_id": "navyat",
+    "storage_bucket": "navyat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884962337718:android:140704f044659bf7b75717",
+        "android_client_info": {
+          "package_name": "com.anurag.ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884962337718-5tqqv7kgbjnok1qdna57kf39t1ij0dta.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anurag.ecommerce",
+            "certificate_hash": "0e2b0c1d47e1ea81cd1d8c9eadc45d26c85a8fad"
+          }
+        },
+        {
+          "client_id": "884962337718-chu4o909b978h5eq7or2ejbeceht54vl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCYghPjQZjbm8hKToOXyXo5rQbOuBEaS4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884962337718-chu4o909b978h5eq7or2ejbeceht54vl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "884962337718-550ostvnddf4svh34s1m6jb1giv2dle0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.anurag.ecommerce"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
