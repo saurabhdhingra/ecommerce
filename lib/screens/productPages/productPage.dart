@@ -29,8 +29,20 @@ class _ProductPageState extends State<ProductPage> {
   String selectedColor = "";
   String selectedSize = "";
 
-  bool isLoading = true;
-  late Product product;
+  bool isLoading = false;
+  Product product = Product(
+    '',
+    "Authentic Nike Air",
+    '',
+    '',
+    [''],
+    [
+      'https://5.imimg.com/data5/ANDROID/Default/2020/11/VA/ML/XT/28747158/product-jpeg-500x500.jpg'
+    ],
+    150,
+    200,
+    0.0,
+  );
 
   int _current = 0;
 
@@ -38,21 +50,21 @@ class _ProductPageState extends State<ProductPage> {
 
   final CarouselController _controller = CarouselController();
 
-  Future getProductData(String productId) async {
-    setState(() {
-      isLoading = true;
-    });
-    product = await apiCart.getProductInformation(productId);
-    setState(() {
-      isLoading = false;
-    });
-  }
+  // Future getProductData(String productId) async {
+  //   setState(() {
+  //     isLoading = true;
+  //   });
+  //   product = await apiCart.getProductInformation(productId);
+  //   setState(() {
+  //     isLoading = false;
+  //   });
+  // }
 
-  @override
-  void initState() {
-    super.initState();
-    getProductData(widget.productId);
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   getProductData(widget.productId);
+  // }
 
   @override
   Widget build(BuildContext context) {

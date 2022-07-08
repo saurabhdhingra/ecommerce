@@ -21,9 +21,11 @@ class _ProductGridViewState extends State<ProductGridView> {
     return GestureDetector(
       onTap: () {
         Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => ProductPage(productId: widget.product.id ?? 'error')),);
+          context,
+          MaterialPageRoute(
+              builder: (context) =>
+                  ProductPage(productId: widget.product.id ?? 'error')),
+        );
       },
       child: Container(
         height: height * 0.3,
@@ -53,9 +55,18 @@ class _ProductGridViewState extends State<ProductGridView> {
                             Radius.circular(20),
                           ),
                         ),
-                        // child: Image.asset(
-                        //   widget.product.imgPaths[0],
-                        // ),
+                        child: Center(
+                          child: ClipRRect(
+                            borderRadius: const BorderRadius.all(
+                              Radius.circular(20),
+                            ),
+                            child: Image.network(
+                              widget.product.imgPaths[0],
+                              fit: BoxFit.fill,
+                              width: 1000,
+                            ),
+                          ),
+                        ),
                       ),
                     ),
                   ],

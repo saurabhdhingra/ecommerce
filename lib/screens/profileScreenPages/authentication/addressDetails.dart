@@ -41,7 +41,7 @@ class _AddressDetailsState extends State<AddressDetails> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.transparent,
+        backgroundColor: Color.fromRGBO(0, 0, 0, 0),
         iconTheme: const IconThemeData(
           color: Colors.black87,
         ),

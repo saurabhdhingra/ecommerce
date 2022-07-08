@@ -19,49 +19,221 @@ class Home extends StatefulWidget {
 }
 
 final List<String> imgList = [
-  'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',
+  'https://static.nike.com/a/images/w_1920,c_limit/6ca98205-3a29-4635-b884-4f2f33e26ffe/nike’s-best-golf-shoes-for-traction-stability-and-comfort.jpg',
   'https://images.unsplash.com/photo-1522205408450-add114ad53fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=368f45b0888aeb0b7b08e3a1084d3ede&auto=format&fit=crop&w=1950&q=80',
-  'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=94a1e718d89ca60a6337a6008341ca50&auto=format&fit=crop&w=1950&q=80',
+  'https://media.weddingz.in/images/6af69e2e2b7e3ad76c19fe9f5b2fcf72/bridalportraitspic13.jpg',
 ];
 
 class _HomeState extends State<Home> {
-  List<Product> productdata = [];
-  List<TopCategory> listData = [];
+  List<Product> productdata = [
+    Product(
+      '',
+      "Nike Air",
+      '',
+      '',
+      [''],
+      [
+        'https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/341e2ed9-9797-4f15-8d4f-265071377068/air-force-1-07-lv8-shoes-BS9f21.png'
+      ],
+      150,
+      200,
+      0.0,
+    ),
+    Product(
+      '',
+      "H&M Shorts",
+      '',
+      '',
+      [''],
+      [
+        'https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F43%2F89%2F43898dad7779c5523a7850bb3ee8cbdcbcca2c05.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_shorts_jeans%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]'
+      ],
+      150,
+      200,
+      0.0,
+    ),
+    Product(
+      '',
+      "Zara Jacket",
+      '',
+      '',
+      [''],
+      [
+        'https://static.zara.net/photos///2022/V/0/2/p/3918/460/800/2/w/375/3918460800_2_1_1.jpg?ts=1642768291622'
+      ],
+      150,
+      200,
+      0.0,
+    ),
+    Product(
+      '',
+      "Muffler",
+      '',
+      '',
+      [''],
+      [
+        'https://assets.ajio.com/medias/sys_master/root/20201015/292z/5f88841baeb269d563df8142/-473Wx593H-461485121-multi-MODEL.jpg'
+      ],
+      150,
+      200,
+      0.0,
+    )
+  ];
+  List<TopCategory> listData = [
+    TopCategory(
+        imgPath:
+            'https://static.zara.net/photos///2022/V/0/2/p/1368/400/800/2/w/1500/1368400800_1_1_1.jpg?ts=1646738230549',
+        label: 'T Shirts'),
+    TopCategory(
+        imgPath:
+            'https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/13936018/2021/6/14/64fca36c-20fc-418e-97d5-b3961ea8d4bc1623656461279-SASSAFRAS-Women-Shorts-5961623656460440-1.jpg',
+        label: 'Shorts'),
+    TopCategory(
+        imgPath:
+            'https://res.cloudinary.com/atoms-shoes/image/upload/c_fill,w_1600,ar_3:2,q_auto,f_auto/v1649178687/products/shoes/model000/black_and_white_000_side_profile_single_-_background_f2f2f2_-_compressed_ytztl9',
+        label: 'Shoes')
+  ];
   List<Brand> brandData = [];
-  List<Product> recommendedData = [];
-  List<Product> recentlyData = [];
+  List<Product> recommendedData = [
+    Product(
+      '',
+      "Authentic Nike Air",
+      '',
+      '',
+      [''],
+      [
+        'https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/341e2ed9-9797-4f15-8d4f-265071377068/air-force-1-07-lv8-shoes-BS9f21.png'
+      ],
+      150,
+      200,
+      0.0,
+    ),
+    Product(
+      '',
+      "H&M Shorts",
+      '',
+      '',
+      [''],
+      [
+        'https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F43%2F89%2F43898dad7779c5523a7850bb3ee8cbdcbcca2c05.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_shorts_jeans%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]'
+      ],
+      150,
+      200,
+      0.0,
+    ),
+    Product(
+      '',
+      "Zara Jacket",
+      '',
+      '',
+      [''],
+      [
+        'https://static.zara.net/photos///2022/V/0/2/p/3918/460/800/2/w/375/3918460800_2_1_1.jpg?ts=1642768291622'
+      ],
+      150,
+      200,
+      0.0,
+    ),
+    Product(
+      '',
+      "Muffler",
+      '',
+      '',
+      [''],
+      [
+        'https://assets.ajio.com/medias/sys_master/root/20201015/292z/5f88841baeb269d563df8142/-473Wx593H-461485121-multi-MODEL.jpg'
+      ],
+      150,
+      200,
+      0.0,
+    )
+  ];
+  List<Product> recentlyData = [
+    Product(
+      '',
+      "Authentic Nike Air",
+      '',
+      '',
+      [''],
+      [
+        'https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/341e2ed9-9797-4f15-8d4f-265071377068/air-force-1-07-lv8-shoes-BS9f21.png'
+      ],
+      150,
+      200,
+      0.0,
+    ),
+    Product(
+      '',
+      "H&M Shorts",
+      '',
+      '',
+      [''],
+      [
+        'https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F43%2F89%2F43898dad7779c5523a7850bb3ee8cbdcbcca2c05.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_shorts_jeans%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]'
+      ],
+      150,
+      200,
+      0.0,
+    ),
+    Product(
+      '',
+      "Zara Jacket",
+      '',
+      '',
+      [''],
+      [
+        'https://static.zara.net/photos///2022/V/0/2/p/3918/460/800/2/w/375/3918460800_2_1_1.jpg?ts=1642768291622'
+      ],
+      150,
+      200,
+      0.0,
+    ),
+    Product(
+      '',
+      "Muffler",
+      '',
+      '',
+      [''],
+      [
+        'https://assets.ajio.com/medias/sys_master/root/20201015/292z/5f88841baeb269d563df8142/-473Wx593H-461485121-multi-MODEL.jpg'
+      ],
+      150,
+      200,
+      0.0,
+    )
+  ];
 
   bool isLoading = false;
 
-  bool isLoggedIn = false;
+  bool isLoggedIn = true;
 
   ApiHome apiClient = ApiHome();
+  // API not live now so this is deprecated using test data instead
+  // Future getData() async {
+  //   setState(() {
+  //     isLoading = true;
+  //   });
+  //   String token = await getToken();
+  //   int userId = await getUserId();
+  //   isLoggedIn = await getIsLoggedIn();
+  //   if (isLoggedIn) {
+  //     recommendedData =
+  //         await apiClient.getRecommendedProducts(userId.toString(), token);
+  //     recentlyData =
+  //         await apiClient.getRecentlyViewed(userId.toString(), token);
+  //   }
+  //   listData = await apiClient.getTopCategories();
+  //   productdata = await apiClient.getTopProducts();
+  //   setState(() {
+  //     isLoading = false;
+  //   });
+  // }
 
-  Future getData() async {
-    setState(() {
-      isLoading = true;
-    });
-    String token = await getToken();
-    int userId = await getUserId();
-    isLoggedIn = await getIsLoggedIn();
-    if (isLoggedIn) {
-      recommendedData =
-          await apiClient.getRecommendedProducts(userId.toString(), token);
-      recentlyData =
-          await apiClient.getRecentlyViewed(userId.toString(), token);
-    }
-    listData = await apiClient.getTopCategories();
-    productdata = await apiClient.getTopProducts();
-    setState(() {
-      isLoading = false;
-    });
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    getData();
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   getData();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -161,18 +333,18 @@ class _HomeState extends State<Home> {
                                             Radius.circular(35),
                                           ),
                                         ),
-                                        // child: Center(
-                                        //   child: ClipRRect(
-                                        //     borderRadius: const BorderRadius.all(
-                                        //       Radius.circular(35),
-                                        //     ),
-                                        //     child: Image.network(
-                                        //       item,
-                                        //       fit: BoxFit.contain,
-                                        //       width: 1000,
-                                        //     ),
-                                        //   ),
-                                        // ),
+                                        child: Center(
+                                          child: ClipRRect(
+                                            borderRadius: const BorderRadius.all(
+                                              Radius.circular(35),
+                                            ),
+                                            child: Image.network(
+                                              item,
+                                              fit: BoxFit.fill,
+                                              width: 1000,
+                                            ),
+                                          ),
+                                        ),
                                       ),
                                     )
                                     .toList(),
@@ -228,7 +400,7 @@ class _HomeState extends State<Home> {
                               ),
                             ),
                             SizedBox(
-                              height: (width * 0.27 * 5 / 3 + width * 0.05) *
+                              height: (width * 0.2 * 5 / 3 + width * 0.05) *
                                   productdata.length *
                                   0.5.ceil(),
                               child: Padding(
@@ -287,7 +459,7 @@ class _HomeState extends State<Home> {
                                         ),
                                       ),
                                       SizedBox(
-                                        height: (width * 0.27 * 5 / 3 +
+                                        height: (width * 0.2 * 5 / 3 +
                                                 width * 0.05) *
                                             recommendedData.length *
                                             0.5.ceil(),
@@ -363,7 +535,7 @@ class _HomeState extends State<Home> {
                                         ),
                                       ),
                                       SizedBox(
-                                        height: (width * 0.27 * 5 / 3 +
+                                        height: (width * 0.2 * 5 / 3 +
                                                 width * 0.05) *
                                             recentlyData.length *
                                             0.5.ceil(),

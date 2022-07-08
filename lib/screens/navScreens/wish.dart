@@ -14,21 +14,115 @@ final List<Map> lists = [
   {
     "name": "Favourites",
     "list": [
-      Product('', "Authentic Nike Air", '', '', [''], [], 0, 0, 0.0),
-      Product('', "Authentic Nike Air", '', '', [''], [], 0, 0, 0.0),
-      Product('', "Authentic Nike Air", '', '', [''], [], 0, 0, 0.0),
-      Product('', "Authentic Nike Air", '', '', [''], [], 0, 0, 0.0),
-      Product('', "Authentic Nike Air", '', '', [''], [], 0, 0, 0.0)
+      Product(
+        '',
+        "Nike Air",
+        '',
+        '',
+        [''],
+        [
+          'https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/341e2ed9-9797-4f15-8d4f-265071377068/air-force-1-07-lv8-shoes-BS9f21.png'
+        ],
+        150,
+        200,
+        0.0,
+      ),
+      Product(
+        '',
+        "H&M Shorts",
+        '',
+        '',
+        [''],
+        [
+          'https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F43%2F89%2F43898dad7779c5523a7850bb3ee8cbdcbcca2c05.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_shorts_jeans%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]'
+        ],
+        150,
+        200,
+        0.0,
+      ),
+      Product(
+        '',
+        "Zara Jacket",
+        '',
+        '',
+        [''],
+        [
+          'https://static.zara.net/photos///2022/V/0/2/p/3918/460/800/2/w/375/3918460800_2_1_1.jpg?ts=1642768291622'
+        ],
+        150,
+        200,
+        0.0,
+      ),
+      Product(
+        '',
+        "Muffler",
+        '',
+        '',
+        [''],
+        [
+          'https://assets.ajio.com/medias/sys_master/root/20201015/292z/5f88841baeb269d563df8142/-473Wx593H-461485121-multi-MODEL.jpg'
+        ],
+        150,
+        200,
+        0.0,
+      )
     ]
   },
   {
     "name": "For Kids",
     "list": [
-      Product('', "Authentic Nike Air", '', '', [''], [], 0, 0, 0.0),
-      Product('', "Authentic Nike Air", '', '', [''], [], 0, 0, 0.0),
-      Product('', "Authentic Nike Air", '', '', [''], [], 0, 0, 0.0),
-      Product('', "Authentic Nike Air", '', '', [''], [], 0, 0, 0.0),
-      Product('', "Authentic Nike Air", '', '', [''], [], 0, 0, 0.0)
+      Product(
+        '',
+        "Nike Air",
+        '',
+        '',
+        [''],
+        [
+          'https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/341e2ed9-9797-4f15-8d4f-265071377068/air-force-1-07-lv8-shoes-BS9f21.png'
+        ],
+        150,
+        200,
+        0.0,
+      ),
+      Product(
+        '',
+        "H&M Shorts",
+        '',
+        '',
+        [''],
+        [
+          'https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F43%2F89%2F43898dad7779c5523a7850bb3ee8cbdcbcca2c05.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_shorts_jeans%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]'
+        ],
+        150,
+        200,
+        0.0,
+      ),
+      Product(
+        '',
+        "Zara Jacket",
+        '',
+        '',
+        [''],
+        [
+          'https://static.zara.net/photos///2022/V/0/2/p/3918/460/800/2/w/375/3918460800_2_1_1.jpg?ts=1642768291622'
+        ],
+        150,
+        200,
+        0.0,
+      ),
+      Product(
+        '',
+        "Muffler",
+        '',
+        '',
+        [''],
+        [
+          'https://assets.ajio.com/medias/sys_master/root/20201015/292z/5f88841baeb269d563df8142/-473Wx593H-461485121-multi-MODEL.jpg'
+        ],
+        150,
+        200,
+        0.0,
+      )
     ]
   }
 ];

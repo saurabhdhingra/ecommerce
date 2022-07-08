@@ -25,7 +25,8 @@ class _WishListProductState extends State<WishListProduct> {
           Navigator.push(
               context,
               MaterialPageRoute(
-                  builder: (context) => ProductPage(productId: widget.product.id ?? 'error')));
+                  builder: (context) =>
+                      ProductPage(productId: widget.product.id ?? 'error')));
         },
         child: Container(
           height: height * 0.24,
@@ -65,9 +66,18 @@ class _WishListProductState extends State<WishListProduct> {
                           Radius.circular(20),
                         ),
                       ),
-                      // child: Image.asset(
-                      //   widget.product.imgPaths[0],
-                      // ),
+                      child: Center(
+                        child: ClipRRect(
+                          borderRadius: const BorderRadius.all(
+                            Radius.circular(20),
+                          ),
+                          child: Image.network(
+                            widget.product.imgPaths[0],
+                            fit: BoxFit.fill,
+                            width: 1000,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                   Padding(

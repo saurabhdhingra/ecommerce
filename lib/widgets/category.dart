@@ -30,6 +30,18 @@ class Category extends StatelessWidget {
                   Radius.circular(20),
                 ),
               ),
+              child: Center(
+                child: ClipRRect(
+                  borderRadius: const BorderRadius.all(
+                    Radius.circular(20),
+                  ),
+                  child: Image.network(
+                    imgPath ?? '',
+                    fit: BoxFit.fill,
+                    width: 1000,
+                  ),
+                ),
+              ),
             ),
             const SizedBox(height: 4),
             Text(
